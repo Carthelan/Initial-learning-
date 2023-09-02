@@ -1,10 +1,9 @@
 ##been-bot
 
-import discord
+import discord 
 import time
-from random import random
-import math
-
+import random
+import asyncio
 
 intents = discord.Intents.default()
 
@@ -12,62 +11,69 @@ intents.message_content = True
 
 client = discord.Client(intents=intents)
 
-@client.event
-async def on_ready():
-    print('We have logged in as {0.user}'.format(client))
+#dict for all players
+#dict for who all is gambling currently 
+#add or subtract current gambling winnings and losses from all players dict 
+players = {}
+initGold = 1000
+winners = {}
+wager = ""
+rolls = {}
+
+startTime = time.localtime()
+    
+def writeToDict(dict, val, amount):
+        dict[val] = amount 
+    
+def updateLosers(dict1, dict2, val1, val2, amount):
+        dict1.update({val1: amount})
+        
+            
+
+    
+start_Time = time.monotonic()
 
 @client.event
 async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.content.startswith('420'):
-        await message.channel.send('69')
-
-client.run('MTE0MTI5NzQwMjc2MzAzMDUzOQ.GdVD9E.EDt8VGAjYprCSIeh2Hwr3H4ksGQwLnIGouBjfI')
-
-@client.event
-
-
-class gambling:
-    #dict for all players
-    #dict for who all is gambling currently 
-    #add or subtract current gambling winnings and losses from all players dict 
-    players = {}
-    betters = {}
-    gold = 1000
-    winners = {}
+    betters = {'Shirt': 1000}
+    rolls = {'Shirt': 1000}
     
-    
-    
-    winner = ""
-    loser = ""
-    
-    def writeToDict(dict, val, amount):
-        dict[val] = amount 
-    
-    def updateDict(dict, val, amount):
-        dict.update
-            
-            
-
-    
-    start_Time = time.gmtime()
-    
-    async def on_message(message):
-        players = {}
-        betters = {}
+    if message.content == "!gamble help":
+        
+        message.channel.send("type !gamble(100 / 250 / 500 / 1000)")
+        
+    if message.content == "!gamble 100":
+        
+        wager = 100
+        
         roll = random.randrange(1, wager, 1)
-        wager = ""
-        startTime = time.localtime()
-        endTime = time.localtime() 
-        if message.content.startswith(f"!gamble {wager}"):
-            await message.channel.send("Press 1 to enter. 20 seconds.")
-            while ((startTime) < (startTime + 20)):
-                endTime = endTime + 1
-                if message.content.startswith("1"):
-                    betters[message.author] = wager
+        
+        message.channel.send("Press 1 to enter. 20 seconds.")
+        
+        def bet_Timer():
+            if message.content.startswith("1"):
+                betters[message.author] = wager
+            client.wait_for('message', timeout=20.0, check="1")
+        bet_Timer()
+    
+        for i in betters:
+            roll 
+            await message.channel.send(f"{betters[i]} rolled a {roll}.")
+            rolls[i] = roll
+        
+        winnerName = max(rolls, key = rolls.get)
+        
+        max_roll = rolls[winnerName]
+        
+        pot = wager * len(betters)
+        
+        message.channel.send(f"{winnerName} wins with a roll of {max_roll}!")
+        
+        players[winnerName] += pot
+        
+        del betters[winnerName]
+        
+        for i in betters[i]:
+            players[i] = (initGold - wager)
             
-            for i in betters:
-                print(f"{betters[i]} rolled a {roll}.")
-            
+client.run("MTE0MTI5NzQwMjc2MzAzMDUzOQ.GpO_BA.bf6QFpOwvOW-tTchnPBcXp1VMSRZTOzyq67pOo")
