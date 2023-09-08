@@ -1,23 +1,41 @@
-from tkinter.filedialog import askopenfile
 import tkinter as tk
+from tkinter import filedialog, ttk
+import os
+import csv
 
-r = tk.Tk
-r.title = ('Collected range reporting')
+##pythonXXX myprogram.py
 
-canvas1 = tk.Canvas(r(), width=500, height=300)
-canvas1.pack()
+window = tk.Tk()
+window.title('Reporting Condenser')
+window.geometry("300x200")
 
-entry1 = tk.Entry()
-canvas1.create_window(200, 140, window=entry1)
+my_Filetypes = [('CSV Files', '.CSV')]
 
-def fileLocationInput():
-    askopenfile(mode='r', filetypes=[('any name you want to display', 'extension of file type')])
+def locateFile():
+    file = filedialog.askopenfilename(parent=window,
+                                initialdir=os.getcwd(),
+                                title="Only Select a CSV file:",
+                                filetypes=my_Filetypes)
+    if file:
+        with open(file) as csvfile:
+            reader = csv.reader(csvfile, delimiter=',') 
+            dict = {}
+            for row in reader:
+                date = row[0]
+                data = row[1]
+                if date not in dict:
+                    dict[date] = {data: 1}
+                elif data not in dict[date]:
+                    dict[date][data] = 1
+                else: 
+                    dict[date][data] += 1
+            
+        print(dict)  
+        
+browseButton = ttk.Button(window, text="Select CSV Location", command=locateFile)
+browseButton.place(x=95, y=100)
 
-button1 = tk.Button(text='Input File Location', command=fileLocationInput)
-canvas1.create_window(200, 180, window=button1)
+instructions = tk.Label(text="1. Select CSV file to compress." + "\n" + "2. It will print to a new CSV on the desktop" + "\n" + "3. Make sure to delete the new CSV after you're finished")
+instructions.pack()
 
-
-
-
-
-r().mainloop()  
+window.mainloop()
