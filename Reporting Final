@@ -1,0 +1,52 @@
+import tkinter as tk
+from tkinter import filedialog, ttk
+import os
+import csv
+
+##Linux startup pythonXXX myprogram.py
+
+window = tk.Tk()
+window.title('Reporting Condenser')
+window.geometry("300x200")
+
+my_Filetypes = [('CSV Files', '.CSV')]
+
+def locateFile():
+    file = filedialog.askopenfilename(parent=window,
+                                initialdir=os.getcwd(),
+                                title="Only Select a CSV file:",
+                                filetypes=my_Filetypes)
+    
+    if file:
+        with open(file, 'w') as csvfile:
+            reader = csv.reader(csvfile, delimiter=',') 
+            dict = {}
+            for row in reader:
+                
+                date = row[0]
+                data = row[1]
+                
+                if date not in dict:
+                    dict[date] = {data: 1}
+                    
+                elif data not in dict[date]:
+                    dict[date][data] = 1
+                    
+                else: 
+                    dict[date][data] += 1
+                    
+            fields =["Date", "Range", "Times Surveyed"]
+            writer = csv.DictWriter(csvfile, fieldnames=fields)
+            writer.writeheader()
+            for row in dict:
+                writer.writerow(row)
+                
+
+        
+browseButton = ttk.Button(window, text="Select CSV Location", command=locateFile)
+browseButton.place(x=95, y=100)
+
+instructions = tk.Label(text="1. Make sure it's a Comma Separated Value Sheet" + "\n" + "2. Select CSV file to compress." + "\n" + "3. It will print to a new CSV on the desktop" + "\n" + "4. Make sure to delete the new CSV after you're finished")
+instructions.pack()
+
+window.mainloop()
