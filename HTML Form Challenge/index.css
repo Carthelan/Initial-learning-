@@ -1,0 +1,10 @@
+body {
+    background-color: #F8F0E3;
+}
+div{
+    margin: 10px;
+}
+td {
+    text-align: left;
+    padding: 3px;
+}
