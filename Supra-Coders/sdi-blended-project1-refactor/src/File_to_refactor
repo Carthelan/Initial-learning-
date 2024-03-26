@@ -1,0 +1,121 @@
+const cardContainer = document.getElementById("cardCatalogContainer")
+const individualCardContainer = document.getElementsByClassName("individualCardContainer")
+const newCardContainer = document.createElement('div');
+const newPicture = document.createElement('img')
+const cardName = document.getElementById('cardName')
+const color = document.getElementById('color')
+const type = document.getElementById('type')
+const mana = document.getElementById('mana')
+const inputReader = document.querySelectorAll('input')
+const submitButton = document.getElementById('submitButton')
+
+
+const baseURL = "https://api.scryfall.com/cards/search?q=";
+let finalURL = baseURL
+let newSearch = "";
+let searchStringArray = []
+
+
+
+
+
+//Takes search terms from input fields and pushes them to an array. 
+function inputArrayAppender () {
+
+    if (color.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`c:${color.value}`)
+    }
+
+    if (cardName.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`${cardName.value}`)
+    }
+
+    if (type.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`type:${type.value}`)
+    }
+
+    if (mana.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`mana:${mana.value}`)
+    }
+    console.log(searchStringArray)
+    urlConcat()
+
+}
+
+//takes array of search terms and concats a URL
+function urlConcat() {
+    for (let i = 0; i < searchStringArray.length; i++) {
+        if (`${searchStringArray[i]}` == false) {
+            continue
+        }else if (i === 0) {
+            finalURL += `${searchStringArray[i]}`;
+        } else {
+            finalURL += '+' + `${searchStringArray[i]}`
+        }
+    }
+    localStorage.setItem('searchURL', finalURL)
+    console.log(finalURL)
+}
+
+//fetch request 
+function getCards() {
+    console.log(finalURL)
+    fetch(`${finalURL}`)
+        .then(response => response.json())
+        .then(response => response['data'])
+        .then(response => parseCards(response))
+}
+
+//Reads object from get request. Sets variables for necessary indexes
+function parseCards(object) {
+    console.log(object.length)
+    for (let j = 0; j < object.length; j++) {
+        let name = object[j]['name']
+        let pictureURL = object[j].image_uris
+        let price = object[j]['prices']
+        if (pictureURL){ 
+            createPictureDOM(pictureURL)
+        }
+    }
+}
+
+//creates new image containers and adds images and styling to them 
+function createPictureDOM(pictureURL) {
+        let newCardContainer = document.createElement('div');
+        let newPicture = document.createElement('img');
+        cardContainer.appendChild(newCardContainer) //makes a individualcardcontainer div
+        newCardContainer.appendChild(newPicture) //adds img tag inside above div
+        newCardContainer.classList = "individualCardContainer"
+        newPicture.src = `${pictureURL.normal}`
+        newPicture.height = 200
+}
+
+
+if (window.location.pathname == '/search.html') {
+    submitButton.addEventListener("click", inputArrayAppender)
+    //localStorage.setItem('searchURL', finalURL)
+    //console.log(localStorage.getItem('searchURL'))
+}
+
+window.onload = function() {
+    if (window.location.pathname == '/searchResults.html') {
+        console.log('window loaded')
+        finalURL = localStorage.getItem('searchURL')
+        console.log(finalURL)
+        getCards()
+    }
+}
+
+
+
+
+
+//onClick="window.location.href = '/searchResults.html'"

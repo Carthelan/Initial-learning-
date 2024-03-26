@@ -1,0 +1,15 @@
+.moviePaneContainer {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+
+.detailsPane {
+  margin-left: 50px;
+}
+
+.moviePaneContainer img {
+  width: 350px;
+  height: 450px;
+}

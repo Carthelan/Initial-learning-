@@ -1,0 +1,23 @@
+.moviePane {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 350px;
+  height: 470px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.moviePane:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.moviePane img {
+  width: 350px;
+  height: 450px;
+  align-content: center;
+}
+

@@ -1,0 +1,58 @@
+import React, { useState } from 'react';
+
+//On "search" click make this read fields and setSearchURL to actual search URL
+
+function inputArrayAppender () {
+    let searchStringArray=[]
+    if (color.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`c:${color.value}`)
+    }
+
+    if (cardName.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`${cardName.value}`)
+    }
+
+    if (type.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`type:${type.value}`)
+    }
+
+    if (mana.value == false) {
+        searchStringArray.push('')
+    } else {
+        searchStringArray.push(`mana:${mana.value}`)
+    }
+}
+
+function urlConcat() {
+    for (let i = 0; i < searchStringArray.length; i++) {
+        if (`${searchStringArray[i]}` == false) {
+            continue
+        }else if (i === 0) {
+            finalURL += `${searchStringArray[i]}`;
+        } else {
+            finalURL += '+' + `${searchStringArray[i]}`
+        }
+    }
+    localStorage.setItem('searchURL', finalURL)
+    console.log(finalURL)
+}
+
+function parseCards(object) {
+    console.log(object.length)
+    for (let j = 0; j < object.length; j++) {
+        let name = object[j]['name']
+        let pictureURL = object[j].image_uris
+        let price = object[j]['prices']
+        if (pictureURL){ 
+            createPictureDOM(pictureURL)
+        }
+    }
+}
+
+export default inputArrayAppender()
