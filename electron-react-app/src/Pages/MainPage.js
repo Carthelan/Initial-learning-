@@ -17,10 +17,7 @@ export default function MainPage() {
 
 
     const handlePersonOnClick = (flight, person) => {
-        console.log(flight)
-        console.log(person)
         setClickedPerson([flight, person])
-        console.log(clickedPerson)
     };
 
 
@@ -30,8 +27,8 @@ export default function MainPage() {
 
     return(
         <BodyContainer>
-            <SideBar flightData={flightData} handlePersonOnClick={handlePersonOnClick}/>
-            <MainInfo flightData={flightData} clickedPerson={clickedPerson}/>
+            <SideBar flightData={flightData} handlePersonOnClick={handlePersonOnClick} style={{width: "20vw"}}/>
+            <MainInfo flightData={flightData} clickedPerson={clickedPerson} style={{width: "80vw"}}/>
         </BodyContainer>
     )
 }

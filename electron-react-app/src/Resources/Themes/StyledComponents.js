@@ -17,7 +17,7 @@ export const HeaderDiv = styled.div`
 
 export const BodyContainer = styled.div`
     display: flex;
-
+    column-count: 4;
 
 `
 
@@ -31,22 +31,28 @@ export const SideBarContainer = styled.div`
 `
 export const MainInfoContainer = styled.div`
     display: flex;
-
+    flex-direction: column;
+    text-align: center;
 `
 
 export const OverviewContainer = styled.div`
-
+    justify-content: center;
+    flex-direction: row;
+    width: 80vw;
+    border-bottom: 1px solid black;
 `
 
 
 export const PersonSpecifics = styled.div`
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 `
 
 export const TrainingContainer = styled.div`
-
+    display: flex;
 `
 
 export const IMRContainer = styled.div`
-
+    display: flex;
 `

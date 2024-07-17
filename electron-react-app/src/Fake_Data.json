@@ -3,18 +3,18 @@
         "DOA": {
             "Kristofer Lilley": {
                 "Trainings": {
-                    "Light": "",
-                    "Heavy": "",
+                    "Light": "01-01-1999",
+                    "Heavy": "01-01-1999",
                     "CBTs": {
-                        "IO": "",
-                        "Small_Arms": "",
-                        "Counter_Terrorism": "",
-                        "CyberAwareness": ""
+                        "IO": "01-01-1999",
+                        "Small_Arms": "01-01-1999",
+                        "Counter_Terrorism": "01-01-1999",
+                        "CyberAwareness": "01-01-1999"
                     }
                 },
                 "IMR": {
-                    "Dental": "",
-                    "Medical": ""
+                    "Dental": "01-01-1999",
+                    "Medical": "01-01-1999"
                 }
             },
             "Person_B": {
