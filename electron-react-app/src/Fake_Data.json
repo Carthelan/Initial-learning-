@@ -1,0 +1,592 @@
+{
+    "Data": {
+        "DOA": {
+            "Kristofer Lilley": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        },
+        "DOB": {
+            "Person_A": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        },
+        "DOC": {
+            "Person_A": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        },
+        "DOD": {
+            "Person_A": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        },
+        "MS": {
+            "Person_A": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        },
+        "COMMAND": {
+            "Person_A": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_B": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_C": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_D": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_E": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            },
+            "Person_F": {
+                "Trainings": {
+                    "Light": "",
+                    "Heavy": "",
+                    "CBTs": {
+                        "IO": "",
+                        "Small_Arms": "",
+                        "Counter_Terrorism": "",
+                        "CyberAwareness": ""
+                    }
+                },
+                "IMR": {
+                    "Dental": "",
+                    "Medical": ""
+                }
+            }
+        }
+    }
+}
