@@ -6,11 +6,34 @@ import { MainInfoContainer,
         IMRContainer} from '../Resources/Themes/StyledComponents';
 
 
-
 export default function MainInfo({flightData, clickedPerson}) {
 
     let name = clickedPerson[1]
     let flight = clickedPerson[0]
+    let cbts = flightData[flight][name]["Trainings"]["CBTs"]
+
+    function mappingFunction(specificTraining) {
+        let allTrainings = Object.keys(flightData[flight][name]["Trainings"]) //array
+        let allIMR = Object.keys(flightData[flight][name]["IMR"]) //array
+
+        let imrCategories = flightData[flight][name]["IMR"] //object
+        let trainings = flightData[flight][name]["Trainings"] //object
+
+        allTrainings.map((specificTraining) => {
+        if (specificTraining === "CBTs") {
+            return (
+                allTrainings.map((specificTraining) => (
+                    <li>Hello</li>
+                ))
+            )
+        } else {
+            return (
+                allTrainings.map((specificTraining) => (
+                    <li>{specificTraining} {Object.values(trainings[specificTraining])}</li>
+                ))
+            )
+        }})
+    }
 
 
     if (clickedPerson.length < 1) {
@@ -20,12 +43,6 @@ export default function MainInfo({flightData, clickedPerson}) {
             </>
         )
     } else {
-        let alltrainings = Object.keys(flightData[flight][name]["Trainings"])
-        let allIMR = Object.keys(flightData[flight][name]["IMR"])
-        let imrCategories = flightData[flight][name]["IMR"]
-        let trainings = flightData[flight][name]["Trainings"]
-
-        console.log(trainings)
         return(
             <div>
                 <OverviewContainer>
@@ -37,20 +54,16 @@ export default function MainInfo({flightData, clickedPerson}) {
                         <TrainingContainer>
                             Trainings
                             <br/>
-                            <ul>
-                                {alltrainings.map((training) => (
-                                    <li>{training}</li>
-                                ))}
-                            </ul>
+                            <ol style={{listStyle: 'none'}}>
+                                {mappingFunction}
+                            </ol>
                         </TrainingContainer>
                         <IMRContainer>
                             IMR
                             <br/>
-                            <ul>
-                                {allIMR.map((indivualIMR) => (
-                                    <li>{indivualIMR}</li>
-                                ))}
-                            </ul>
+                            <ol style={{listStyle: 'none'}}>
+                                {mappingFunction}
+                            </ol>
                         </IMRContainer>
                     </PersonSpecifics>
                 </MainInfoContainer>
